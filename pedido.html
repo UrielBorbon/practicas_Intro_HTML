@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pedido CakeStarving</title>
+    </head>
+    <body>
+        <h1>Haz tu pedido</h1>
+
+        <form action="pedido.js">
+            <label for="Nombre">Danos tu nombre para el Pedido</label><br>
+            <input type="text" id="Nombre" name="Nombre" placeholder="Nombre"><br>
+            <label for="Telefono">Danos tu telefono para el Pedido</label><br>
+            <input type="text" id="Telefono" name="Telefono" placeholder="Telefono"><br>
+            <label for="Telefono">Danos tu correo electrónico para el Pedido</label><br>
+            <input type="text" id="Correo" name="Correo" placeholder="Correo"><br>
+            <label for="Descripcion">Danos tu descripcion a detalle para el Pedido</label><br>
+            <input type="text" id="Descripcion" name="Descripcion" placeholder="Descripcion"><br>
+            <br><br>
+            
+            <p>¿Pasteles de que?</p>
+            <input type="checkbox" name="zanahoria" id="zanahoria" value="Zanahoria">
+            <label for="zanahoria">Pastel de Zanahoria</label>
+            <input type="number" id="zanahoriaCuantos" name="zanahoriasCuantos" placeholder="Cuantos?"><br><br>
+
+            <input type="checkbox" name="chocolate" id="chocolate" value="Chocolate">
+            <label for="chocolate">Pastel de Chocolate Kinder</label>
+            <input type="number" id="chocolateCuantos" name="chocolateCuantos" placeholder="Cuantos?"><br><br>
+
+            <input type="checkbox" name="tresleches" id="tresleches" value="TresLeches">
+            <label for="tresleches">Pastel de Tres Leches</label>
+            <input type="number" id="treslechesCuantos" name="treslechesCuantos" placeholder="Cuantos?"><br><br>
+
+            <input type="checkbox" name="caramelo" id="caramelo" value="Caramelo">
+            <label for="caramelo">Pastel de Caramelo</label>
+            <input type="number" id="carameloCuantos" name="carameloCuantos" placeholder="Cuantos?"><br><br>
+
+            <input type="checkbox" name="cajeta" id="cajeta" value="Cajeta">
+            <label for="cajeta">Pastel de Cajeta</label>
+            <input type="number" id="cajetaCuantos" name="cajetaCuantos" placeholder="Cuantos?"><br><br>
+
+            <input type="checkbox" name="mango" id="mango" value="Mango">
+            <label for="mango">Pastel de Mango</label>
+            <input type="number" id="mangoCuantos" name="mangoCuantos" placeholder="Cuantos?"><br><br>
+
+            <p>¿Gustas algunas Galletas para acompañar tu pastel?</p>
+            <select name="galletas" id="galletas">
+                <option value="Chocolate">Chocolate</option>
+                <option value="Avena">Avena</option>
+                <option value="Integrales">Integrales</option>
+                <option value="Limon">Limon</option>
+                <option value="Coco">Coco</option>
+            </select>
+
+            <br><br>
+            <label for="adornos">Adornos para Pasteles</label> <br>
+            <select name="adornos[]" id="adornos" multiple>
+                <option value="1">Desnudo</option>
+                <option value="2">Frutas</option>
+                <option value="3">Lluvia de chocolate (lunetas, chispas)</option>
+                <option value="4">Rosas reales (comestibles)</option>
+                <option value="5">Rosas de dulce</option>
+                <option value="6">Frutas exoticas</option>
+            </select>
+            <br><br>
+
+            <br><br>
+                <label for="sabores">Sabores de Pasteles</label> <br>
+                <select name="sabores[]" id="sabores" multiple>
+                    <option value="1">Chocolate Blanco</option>
+                    <option value="2">Chocolate Negro Amargo</option>
+                    <option value="3">Frambuesa</option>
+                    <option value="4">Limón</option>
+                    <option value="5">Coconut</option>
+                </select>
+            <br><br>
+            <input type="reset">
+            <input type="submit">
+            <br><br>
+        </form>
+    </body>
+</hmtl>
